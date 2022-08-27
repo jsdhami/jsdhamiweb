@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "jsdhami.tk",
+  "Id": "8d39935c-617b-40d1-b9cc-10dbacf30cb8"
+}
