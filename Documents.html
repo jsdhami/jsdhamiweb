@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Downloads Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+function downloadFile(filename) {
+	// Replace with your own download link or code to download file
+	console.log(`Downloading ${filename}...`);
+}
+
+</script>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.downloads-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.download-item {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	padding: 20px;
+	margin: 20px;
+	max-width: 300px;
+	text-align: center;
+}
+
+.download-item h2 {
+	margin-top: 0;
+}
+
+.download-item button {
+	background-color: #007bff;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.download-item button:hover {
+	background-color: #0062cc;
+}
+
+</style>
+</head>
+<body>
+
+	<h1>Downloads Documents</h1>
+	<div class="downloads-container">
+		<div class="download-item">
+			<h2>MBBS CEE Admit Card</h2>
+			<p>This is my CEE-MBBS Admit Card</p>
+			<button onclick="downloadFile('file1')"><a href="CEE Admit Card.pdf">Download</a>
+</button>
+		</div>
+		<div class="download-item">
+			<h2>Na. Su. Loksewa Admit Card</h2>
+			<p>This is my Loksewa Admit Card</p>
+			<button onclick="downloadFile('file1')"><a href="Loksewa Admit Card.pdf">Download</a>
+		</div>
+		<div class="download-item">
+			<h2>NYMU Registration </h2>
+			<p>This is A Registration File For NYMU Membership</p>
+			<button onclick="downloadFile('file1')"><a href="nymu.pdf">Download</a>
+		</div>
+	</div>
+</body>
+</html>
