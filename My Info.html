@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.login-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+
+<script>
+const form = document.getElementById('login-form');
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const username = usernameInput.value;
+  const password = passwordInput.value;
+
+  if (username === 'admin' && password === 'janu') {
+    window.location.href = 'data.html';
+  } else {
+    alert('Invalid username or password');
+  }
+});
+
+</script>
+
+
+
+
+
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" action="">
+      <input type="text" id="username" name="username" placeholder="Username">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <button type="submit" id="login-button">Login</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
